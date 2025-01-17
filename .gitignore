@@ -1,0 +1,42 @@
+# Ignoriere den target-Ordner (Build-Artefakte)
+target/
+
+# Ignoriere temporäre Dateien und Ordner
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignoriere Konfigurationsdateien von IDEs
+.idea/
+*.iml
+.vscode/
+
+# Ignoriere Betriebssystem-spezifische Dateien
+Thumbs.db
+
+# Ignoriere Build-Tools-spezifische Dateien
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+.checkstyle.xml
+
+# Ignoriere versteckte Dateien von Tools wie TMC
+.tmcproject.yml
+
+# Ignoriere eventuell generierte Backup-Dateien
+*~
+
+# Ignore macOS-specific files
+.DS_Store
+**/.DS_Store
+
+# Ignoriere .json-Dateien
+*.json
+
+# Ignoriere alle pom.xml-Dateien im Projekt
+**/pom.xml
+
+# Ignoriere alle Helsinki-Test-Dateien
+**/src/test/
