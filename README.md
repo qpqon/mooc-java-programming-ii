@@ -1,6 +1,10 @@
-# mooc-java-programming-i
+# mooc-java-programming-ii
 
 This repository contains code for the  "Java Programming" course by the University of Helsinki.
+
+**⚠️ Note:**  
+This repository is a work in progress. I am currently working on the course and actively adding new solutions.  
+The last completed task is **part14-Part14_01.Shanghai**.
 
 ## Project Overview
 
@@ -31,4 +35,4 @@ More details about the course can be found on their website: [Java Programming M
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/qpqon/mooc-java-programming-i.git
+   git clone https://github.com/qpqon/mooc-java-programming-ii.git
