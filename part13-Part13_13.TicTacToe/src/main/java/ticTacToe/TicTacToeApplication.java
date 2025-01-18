@@ -15,14 +15,9 @@ import javafx.stage.Stage;
 // to be highlighted. 
 
 public class TicTacToeApplication extends Application {    
-    TicTacToeGame game;
-    private int gridSize;
+    private TicTacToeGame game = new TicTacToeGame();
+    private int gridSize = 3;
     
-    public void init() {
-        this.game = new TicTacToeGame();
-        this.gridSize = 3;
-    }
-
     public static void main(String[] args) {
         launch(TicTacToeApplication.class);
     }
