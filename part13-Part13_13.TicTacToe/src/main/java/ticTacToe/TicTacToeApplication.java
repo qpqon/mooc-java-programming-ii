@@ -43,9 +43,11 @@ public class TicTacToeApplication extends Application {
                         button.setText(game.getPlayer());
                         
                         if (weHaveAWInner(tttGrid)) {
-                            referee.setText("Player " + game.getPlayer() + " wins!");                            
+                            referee.setText("The end!"); 
+                            //incompatible wth TMC: referee.setText("Player " + game.getPlayer() + " wins!");                           
                         } else if (game.isDraw()) {
-                            referee.setText("Stalemate");
+                            referee.setText("The end!");
+                            //incompatible wth TMC: referee.setText("Stalemate");
                         } else {
                             game.switchPlayer();
                             referee.setText("Turn: " + game.getPlayer());
