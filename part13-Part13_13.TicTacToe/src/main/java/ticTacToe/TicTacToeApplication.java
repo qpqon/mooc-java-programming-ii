@@ -11,14 +11,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
-// This program does a little bit more than what was asked. I wanted the "winning buttons"
-// to be somehow highlighted. Generally, because I started out with adding the buttons as a nested
-// loop to the GridPane I had to come up with a lot more ideas to access them later on than
-// if I had just boilerplated them and the "Adding buttons to grid" section blew up over time.
-// I am still thinking about sourcing out parts of that section without introducing methods with
-// five parameters..
-// In short, I believe this code could be more readable and have better division if I would have 
-// gone with more repetition. I am sure somewhere, someone said something about that :)
+// This program does a little bit more than what was asked because I wanted the "winning buttons"
+// to be highlighted. 
 
 public class TicTacToeApplication extends Application {    
     TicTacToeGame game;
