@@ -13,8 +13,8 @@ public class UnfairAdvertisementApplication extends Application {
     @Override
     public void start(Stage window) {
         CategoryAxis xAxis = new CategoryAxis();
-        NumberAxis yAxis = new NumberAxis(77.0, 77.5, 0.1);
-        yAxis.setTickLabelsVisible(false);
+        NumberAxis yAxis = new NumberAxis(0, 80, 10); // before (77.0, 77.5, 0.1)
+        yAxis.setTickLabelsVisible(true);             // before (false)
         yAxis.setLabel("Faster and Better!");
 
         BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
