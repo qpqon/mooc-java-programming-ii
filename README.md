@@ -4,7 +4,7 @@ This repository contains code for the  "Java Programming" course by the Universi
 
 **⚠️ Note:**  
 This repository is a work in progress. I am currently working on the course and actively adding new solutions.  
-The last completed task is **part14-Part14_03.SavingsCalculator**.
+The last completed task is **part14-Part14_04.UnfairAdvertisement**.
 
 ## Project Overview
 
