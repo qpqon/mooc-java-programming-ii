@@ -17,10 +17,7 @@ public class CollageApplication extends Application {
     @Override
     public void start(Stage stage) {
 
-        // the example opens the image, creates a new image, and copies the opened image
-        // into the new one, pixel by pixel
         Image sourceImage = new Image("file:monalisa.png");
-
         PixelReader imageReader = sourceImage.getPixelReader();
 
         int width = (int) sourceImage.getWidth();
@@ -29,25 +26,26 @@ public class CollageApplication extends Application {
         WritableImage targetImage = new WritableImage(width, height);
         PixelWriter imageWriter = targetImage.getPixelWriter();
 
-        int yCoordinate = 0;
-        while (yCoordinate < height) {
-            int xCoordinate = 0;
-            while (xCoordinate < width) {
+        // scales
+        int halfWidth = width / 2;
+        int halfHeight = height / 2;
 
-                Color color = imageReader.getColor(xCoordinate, yCoordinate);
-                double red = color.getRed();
-                double green = color.getGreen();
-                double blue = color.getBlue();
+        for (int y = 0; y < halfHeight; y++) {
+            for (int x = 0; x < halfWidth; x++) {
+                
+                Color color = imageReader.getColor(x * 2, y * 2);
+                double red = 1.0 - color.getRed();
+                double green = 1.0 - color.getGreen();
+                double blue = 1.0 - color.getBlue();
                 double opacity = color.getOpacity();
 
                 Color newColor = new Color(red, green, blue, opacity);
 
-                imageWriter.setColor(xCoordinate, yCoordinate, newColor);
-
-                xCoordinate++;
+                imageWriter.setColor(x, y, newColor);
+                imageWriter.setColor(x, halfHeight + y, newColor);
+                imageWriter.setColor(halfWidth + x, y, newColor);                
+                imageWriter.setColor(halfWidth + x, halfHeight + y, newColor);
             }
-
-            yCoordinate++;
         }
 
         ImageView image = new ImageView(targetImage);
@@ -62,5 +60,4 @@ public class CollageApplication extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }
