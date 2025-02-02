@@ -2,10 +2,6 @@
 
 This repository contains code for the  "Java Programming" course by the University of Helsinki.
 
-**⚠️ Note:**  
-This repository is a work in progress. I am currently working on the course and actively adding new solutions.  
-The last completed task is **part14-Part14_07.Collage**.
-
 ## Project Overview
 
 The repository includes solutions for various exercises and assignments. The exercises are organized by parts and tasks.
